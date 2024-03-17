@@ -12,7 +12,7 @@ https://github.com/Jonishmanju/Multiple_Disease_prediction/assets/90138835/aadbe
 Our prototype is a sophisticated predictive model designed to forecast the likelihood of heart attacks and diabetes in individuals. Through advanced machine learning algorithms, our system analyzes various health parameters to provide accurate predictions, enabling proactive measures for preventive healthcare.
 
 ### Team Details
-**Team Number:** VH000
+**Team Number:** VH123
 
 | Name                      | Email                  |
 |---------------------------|------------------------|
