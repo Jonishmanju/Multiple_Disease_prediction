@@ -42,9 +42,20 @@ We employed a multi-faceted approach integrating Node.js, React, and machine lea
 - Nueral Networks
 
 ## To Run Locally
+Cloning the Repo to the Local Desktop
+
 <code>git clone https://github.com/Jonishmanju/Multiple_Disease_prediction.git</code>
+
+Install the requirements to setup and run the project
+
 <code>pip install requirements</code>
+
+Run the app.py 
+
 <code>python app.py</code>
+
+Open the Local host in your web browser.
+
 
 ## What's Next?
 In the future, we plan to enhance the predictive accuracy of our model by incorporating additional health parameters and refining our machine learning algorithms. We aim to deploy our solution on a larger scale, making preventive healthcare more accessible to communities worldwide.
