@@ -41,6 +41,13 @@ We employed a multi-faceted approach integrating Node.js, React, and machine lea
 - Machine Learning
 - Nueral Networks
 
+## Output Screenshots
+
+![image](https://github.com/Jonishmanju/Multiple_Disease_prediction/assets/90138835/f22ee334-123a-4f2f-b88a-7721571bf2b7)
+
+![image](https://github.com/Jonishmanju/Multiple_Disease_prediction/assets/90138835/3850e04c-5156-4261-b206-79fe10dd5ba0)
+
+
 ## To Run Locally
 Cloning the Repo to the Local Desktop
 
