@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        form{
+            margin-top: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button,a{
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        a{
+            float: right;
+        }
+        #prediction-result{
+            margin-top: 20px;
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="diabetic">
+        <h1>Heart Disease Prediction</h1>
+        <form action="/heart" method="post">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="sex">Sex:</label>
+            <input type="number" id="sex" name="sex" required>
+            
+            <label for="chest-pain">Chest Pain Type:</label>
+            <input type="number" id="chest-pain" name="chest-pain" required>
+        
+            <label for="blood-pressure">Blood Pressure (mm Hg):</label>
+            <input type="number" id="blood-pressure" name="blood-pressure" required>
+        
+            <label for="cholesterol">Cholesterol:</label>
+            <input type="number" id="cholesterol" name="cholesterol" required>
+        
+            <label for="fbs">FBS over 120:</label>
+            <input type="number" id="fbs" name="fbs" required>
+        
+            <label for="ekg-results">EKG Results:</label>
+            <input type="number" id="ekg-results" name="ekg-results" required>
+        
+            <label for="max-hr">Max Heart Rate:</label>
+            <input type="number" id="max-hr" name="max-hr" required>
+        
+            <label for="exercise-angina">Exercise Angina:</label>
+            <input type="number" id="exercise-angina" name="exercise-angina" required>
+        
+            <label for="st-depression">ST Depression:</label>
+            <input type="number" id="st-depression" name="st-depression" required>
+        
+            <label for="slope-st">Slope of ST:</label>
+            <input type="number" id="slope-st" name="slope-st" required>
+        
+            <label for="num-vessels-fluro">Number of Vessels Fluro:</label>
+            <input type="number" id="num-vessels-fluro" name="num-vessels-fluro" required>
+        
+            <label for="thallium">Thallium:</label>
+            <input type="number" id="thallium" name="thallium" required>
+        
+            <button type="submit">Predict Heart Disease</button>
+            <a href="/">Diabetes&nbsp;Prediction</a>
+        </form>
+        
+        <div id="prediction-result">{{pred}}</div>
+    </div>
+</body>
+
+</html>

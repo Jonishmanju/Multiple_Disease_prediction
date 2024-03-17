@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        form{
+            margin-top: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button,a{
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        a{
+            float: right;
+        }
+        #prediction-result{
+            margin-top: 20px;
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="diabetic">
+        <h1>Diabetic Prediction</h1>
+        <form action="/" method="post">
+            <label for="pregenvies">No of pregnancies:</label>
+            <input type="number" id="pregenvies" name="pregenvies" required>
+            <label for="glucose">Glucose Level (mg/dL):</label>
+            <input type="number" id="glucose" name="glucose" required>
+            <label for="blood-pressure">Blood Pressure (mm Hg):</label>
+            <input type="number" id="blood-pressure" name="blood-pressure" required>
+            <label for="skin-thickness">Skin Thickness:</label>
+            <input type="number" id="skin-thickness" name="skin-thickness" required>
+            <label for="insulin">Insulin Level:</label>
+            <input type="number" id="insulin" name="insulin" required>
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" name="bmi" step="0.01" required>
+            <label for="diabetes-pedigree">Diabetes Pedigree Function:</label>
+            <input type="number" id="diabetes-pedigree" name="diabetes-pedigree" step="0.01" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <button type="submit">Predict</button>
+            <a href="/heart">Heart&nbsp;Disease</a>
+        </form>
+        <div id="prediction-result">{{pred}}</div>
+    </div>
+</body>
+
+</html>
